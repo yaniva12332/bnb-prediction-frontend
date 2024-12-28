@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     const fetchPrediction = async () => {
       try {
-        const response = await fetch("http://localhost:5000/predict");
+        const response = await fetch("https://bnb-prediction-backend.onrender.com/predict");
         if (!response.ok) {
           throw new Error("Failed to fetch prediction");
         }
